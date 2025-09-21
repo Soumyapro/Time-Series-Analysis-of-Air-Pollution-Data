@@ -32,12 +32,18 @@ The dataset used in this project is the [Air Quality UCI Dataset](https://archiv
 7.  **Comparison of Trends**: Compare the forecast trends of different pollutants or environmental factors (e.g., CO(GT) and RH).
 8.  **Conclusion**: Summarize the findings from the analysis and forecasting. Discuss the identified essential factors and the predicted future trends.
 
-## Key Findings (To be filled after completing the analysis)
+## Key Findings
 
--   [Summarize the most important factors you identified]
--   [Describe the trends observed in the forecast for the target variable]
--   [Mention any interesting seasonality patterns]
--   [Compare the trends of different variables if you performed that step]
+-   **Important Factors**: Based on the correlation matrix, **PT08.S1(CO)**, **C6H6(GT)**, **PT08.S2(NMHC)**, and **NOx(GT)** show strong positive correlations with **CO(GT)**, suggesting they are important factors related to Carbon Monoxide levels. **PT08.S3(NOx)** shows a strong negative correlation with **CO(GT)**. Environmental factors like **Temperature (T)**, **Relative Humidity (RH)**, and **Absolute Humidity (AH)** show weaker correlations with CO(GT) but have stronger correlations among themselves and with other pollutants like **PT08.S4(NO2)**.
+
+-   **Trends in Forecast**:
+    -   The forecast for **CO(GT)** shows a general decreasing trend over the forecasted period. There are also noticeable daily and weekly seasonality patterns.
+    -   The forecast for **Relative Humidity (RH)** shows fluctuations and a general decreasing trend as well, but with different seasonal patterns compared to CO(GT).
+
+-   **Seasonality Patterns**: The Prophet model identified significant daily and weekly seasonality for both CO(GT) and RH, indicating that their levels follow predictable patterns within a day and across a week.
+
+-   **Comparison of Trends**: The comparison plot of the trend lines for CO(GT) and RH indicates that both pollutants show a general downward trend over the period of the data and the forecast, though the magnitude and shape of the decline differ.
+
 
 ## How to Run the Code
 
